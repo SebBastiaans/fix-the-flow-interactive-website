@@ -307,6 +307,17 @@ main{
             position: absolute;
             inset: 0;
         }
+
+        /* in de styleguide aanpassen */
+
+        .article-tags{
+            bottom: 120px;
+            
+            img{
+                width: 2rem;
+                border-radius: 50%;
+            }
+        }
     }
 }
 
