@@ -309,13 +309,34 @@ main{
         }
 
         /* in de styleguide aanpassen */
+        .article-product{
+            .article-tags{
+                bottom: 120px;
 
-        .article-tags{
-            bottom: 120px;
-            
-            img{
-                width: 2rem;
-                border-radius: 50%;
+                img{
+                    width: 2rem;
+                    border-radius: 50%;
+                }
+            }
+
+            .article-statistics{
+                width: 96%;
+                height: 3.5rem;
+                border-top: 1px solid var(--primary-background-color);
+                bottom: -7px;
+                
+                p:first-of-type{
+                    display: flex;
+                    align-items:center ;
+                    margin-bottom: -7px;
+                }
+                p{
+                    text-align: center;
+                }
+            }
+
+            p{
+                margin: 0;
             }
         }
     }
