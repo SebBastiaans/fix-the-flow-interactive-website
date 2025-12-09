@@ -90,7 +90,6 @@ main{
             display: flex;
             flex-direction: column;
             width: 21rem;
-            margin-inline-start: 1rem;
             flex: 3;
             position: sticky;
             bottom: 0;
@@ -118,36 +117,20 @@ main{
                 width: 21rem;
             }
 
-            /* dit is de chat bar */
-            /* .secondary-search-bg{
-                padding: 0;
-                width: 18rem;
-                margin-bottom: 1rem;
-
-                .secondary-search-input{
-                    width: 100%;
-                }
-
-                .ai-button-primary{
-                    left: .2rem;
-                }
-
-                .ai-button-secondary{
-                    position: absolute;
-                    right: auto;
-                    left: 15rem;
-                    width: auto
-                }
-            } */
-
-            .main-search-popover{
-                width: 21rem;
-                border: none;
-                position: sticky;
-                bottom: 0;
-                align-self: end;
-                align-items: center;
+            .secondary-search-bg {
+                position: relative;
+                width: 90%;
             }
+
+            .ai-button-secondary{
+                right: 0.7em;
+            }
+
+            .ai-button-primary{
+                left: 0.7em;
+                height: 50px;
+            }
+
 
             /* .ai-button{
                 position:fixed;
@@ -188,13 +171,22 @@ main{
                 }
 
             } */
+
             article{           
                 display: none;
                 flex-direction: column;
                 background-color:var(--primary-background-color);
                 border-radius: 2rem;
-                height: 40rem;
-                width: 20rem; 
+                height: fit-content;
+                width: 90%; 
+
+                #chat-handle{
+                    background-color: var(--secondary-text-color);
+                    height: 4px;
+                    width: 70%;
+                    align-self: center;
+                    border-radius: 0 0 1rem 1rem ;
+                }
                 
                 p{
                     border-radius: 1rem 1rem 0 1rem;
@@ -204,7 +196,7 @@ main{
                     max-width: 20ch;
                 }
 
-                p:first-child{
+                p:first-of-type{
                     background-color: var(--user-chat-background-color);
                     align-self: end;
                 }
@@ -215,6 +207,8 @@ main{
                         border-radius: 1rem 1rem 1rem 0;
                     }
                 }
+
+                
             }
             .article-visible {
                 display: flex;
@@ -450,3 +444,4 @@ footer{
         justify-content: space-evenly;
     }
 }
+
