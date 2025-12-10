@@ -1,7 +1,7 @@
 // 1 - selecteer search de button
 let searchAiButton = document.querySelector('.ai-button-secondary')
 let inputAiEnter = document.querySelector('.secondary-search-input')
-
+let chatDown = document.querySelector('#chat-handle')
 // 2 - event click
 searchAiButton.addEventListener('click',
 
@@ -11,6 +11,12 @@ function(){
     document.querySelector('h1').classList.add('heading-gone')
 }
 )
+
+chatDown.addEventListener('click', function(){
+    document.querySelector('#open-AI-chat').classList.remove('article-visible')
+    document.querySelector('h1').classList.remove('heading-gone')
+
+})
 // document.querySelector('.main-section-search article')
 
 inputAiEnter.addEventListener('keydown', function(event){
