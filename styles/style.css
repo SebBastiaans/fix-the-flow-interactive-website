@@ -172,13 +172,22 @@ main{
 
             } */
 
+            @keyframes AIchat{
+                0%{
+                    transform: scale(0);
+                }
+                100%{
+                    transform: scale(1);
+                }
+            }
+
             article{           
                 display: none;
                 flex-direction: column;
                 background-color:var(--primary-background-color);
                 border-radius: 2rem;
                 height: fit-content;
-                width: 90%; 
+                width: 90%;
 
                 #chat-handle{
                     background-color: var(--secondary-text-color);
@@ -210,8 +219,13 @@ main{
 
                 
             }
+
             .article-visible {
                 display: flex;
+                animation-name: AIchat;
+                animation-duration: 2s;
+                animation-iteration-count: 1;
+                animation-fill-mode: forwards;
             }
 
         }
@@ -356,6 +370,25 @@ footer{
         p{
             margin: auto;
         }
+
+        /* .footer-input:has(:user-invalid){
+            animation-name: invalid;
+            animation-duration: .5s;
+            animation-timing-function: ease;
+        }
+
+
+        @keyframes invalid {
+            0%{
+                background-color: transparent;
+            }
+            20%{
+                background-color: red; 
+            }
+            100%{
+                background-color: transparent;
+            }
+        } */
 
         @media(min-width:768px){
             display: flex;
