@@ -122,6 +122,25 @@ main{
                 width: 90%;
             }
 
+            .secondary-search-input{
+                
+                border-image: 
+                    radial-gradient(
+                        closest-side circle,
+                        white calc(100% - .225em),
+                        transparent 0
+                    ),
+                    conic-gradient(
+                        red,
+                        orange,
+                        gold,
+                        yellowgreen,
+                        dodgerblue,
+                        purple,
+                        red
+                    );                
+            }
+
             .ai-button-secondary{
                 right: 0.7em;
             }
