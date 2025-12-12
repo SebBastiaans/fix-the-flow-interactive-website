@@ -77,6 +77,16 @@ main{
     margin-top: 3em;
     padding-bottom: 1rem;
 
+    &:has(input[type="checkbox"]:checked){
+        article{
+            display: none;
+        }
+        article:first-of-type{
+            display: block;
+        }
+
+    }
+
     @media(min-width:1024px){
         margin-top: 1em;
         display: flex;
@@ -123,7 +133,7 @@ main{
             }
 
             .secondary-search-input{
-                
+
                 border-image: 
                     radial-gradient(
                         closest-side circle,
@@ -252,6 +262,7 @@ main{
                 }
             } */
 
+            
         }
     }
 
