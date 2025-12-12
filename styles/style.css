@@ -172,15 +172,6 @@ main{
 
             } */
 
-            @keyframes AIchat{
-                0%{
-                    transform: scale(0);
-                }
-                100%{
-                    transform: scale(1);
-                }
-            }
-
             article{           
                 display: none;
                 flex-direction: column;
@@ -188,6 +179,7 @@ main{
                 border-radius: 2rem;
                 height: fit-content;
                 width: 90%;
+                /* border: 2px solid black; */
 
                 #chat-handle{
                     border: none;
@@ -202,6 +194,11 @@ main{
                     padding: .2rem;
                     width: fit-content;
                     max-width: 20ch;
+                    /* border: 1px solid black; */
+                }
+
+                label{
+                    /* border: 1px solid black; */
                 }
 
                 p:first-of-type{
@@ -221,11 +218,20 @@ main{
 
             .article-visible {
                 display: flex;
-                animation-name: AIchat;
+                /* animation-name: AIchat;
                 animation-duration: 2s;
                 animation-iteration-count: 1;
-                animation-fill-mode: forwards;
+                animation-fill-mode: forwards; */
             }
+
+            /* @keyframes AIchat{
+                0%{
+                    transform: scale(1);
+                }
+                100%{
+                    transform: scale(2);
+                }
+            } */
 
         }
     }
