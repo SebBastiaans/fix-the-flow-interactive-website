@@ -78,13 +78,14 @@ main{
     padding-bottom: 1rem;
 
     &:has(input[type="checkbox"]:checked){
-        article{
-            display: none;
+        .product-grid{
+            article{
+                display: none;
+            }
+            article:first-of-type{
+                display: block;
+            }
         }
-        article:first-of-type{
-            display: block;
-        }
-
     }
 
     @media(min-width:1024px){

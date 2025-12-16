@@ -25,5 +25,3 @@ let form = document.querySelector('.secondary-search-bg')
 form.addEventListener('submit', function(event) {
   event.preventDefault()
 })
-
-//dreamer checkbox checked
