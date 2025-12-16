@@ -15,11 +15,6 @@ form {
     gap: 1em;
   }
 
-  .submit-button {
-    width: fit-content;
-    margin-block-end: 1em;
-  }
-
   .input-label-text-large {
     appearance: none;
     border-radius: 6px;
@@ -85,6 +80,11 @@ form {
 
     input[type="submit"] {
       align-self: flex-end;
+      width: fit-content;
+
+      &:hover{
+        border: 1px solid var(--secondary-text-color);
+      }
     }
   }
 }
