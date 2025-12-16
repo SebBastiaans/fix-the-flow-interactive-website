@@ -59,14 +59,17 @@ header{
         }
     }
 
-    .profile{
-        display: flex;
-    }
-
     .icons{
         display: flex;
         padding: 20px 20px 0 20px;
         align-content: center;
+
+        /* a{
+            display: flex;
+            text-decoration: none;
+            color: var(--secondary-text-color);
+            flex-direction: column;
+        } */
     }
 }
 
@@ -224,11 +227,6 @@ main{
                     padding: .2rem;
                     width: fit-content;
                     max-width: 20ch;
-                    /* border: 1px solid black; */
-                }
-
-                label{
-                    /* border: 1px solid black; */
                 }
 
                 p:first-of-type{
@@ -248,20 +246,7 @@ main{
 
             .article-visible {
                 display: flex;
-                /* animation-name: AIchat;
-                animation-duration: 2s;
-                animation-iteration-count: 1;
-                animation-fill-mode: forwards; */
             }
-
-            /* @keyframes AIchat{
-                0%{
-                    transform: scale(1);
-                }
-                100%{
-                    transform: scale(2);
-                }
-            } */
 
             
         }
@@ -406,25 +391,6 @@ footer{
         p{
             margin: auto;
         }
-
-        /* .footer-input:has(:user-invalid){
-            animation-name: invalid;
-            animation-duration: .5s;
-            animation-timing-function: ease;
-        }
-
-
-        @keyframes invalid {
-            0%{
-                background-color: transparent;
-            }
-            20%{
-                background-color: red; 
-            }
-            100%{
-                background-color: transparent;
-            }
-        } */
 
         @media(min-width:768px){
             display: flex;
