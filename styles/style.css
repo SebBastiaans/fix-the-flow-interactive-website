@@ -177,7 +177,8 @@ main{
             }
 
             .secondary-search-input{
-                width: 20.6rem;
+                width: 100%;
+                box-sizing: border-box;
             }
 
             article{           
