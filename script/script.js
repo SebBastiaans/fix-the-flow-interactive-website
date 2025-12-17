@@ -2,7 +2,7 @@
 // 2 - Luister naar een event, en roep een callback function aan. (click, submit)
 // 3 - pas een property van een element aan (classlist)
 
-//chat openen met button
+// chat openen met button
 let searchAiButton = document.querySelector('.ai-button-secondary')
 
 searchAiButton.addEventListener('click', function(){
@@ -19,9 +19,18 @@ chatDown.addEventListener('click', function(){
 
 })
 
-//chat openen met enter knop
+// chat openen met enter knop
 let form = document.querySelector('.secondary-search-bg')
 
 form.addEventListener('submit', function(event) {
   event.preventDefault()
 })
+
+
+// Animatie openen chat.
+const chatInput = document.querySelector("input[type=text]");
+
+chatInput.addEventListener("focus", function () {
+  document.querySelector("section article").classList.add("article-visible");
+  document.querySelector("h1").classList.add("heading-gone");
+});

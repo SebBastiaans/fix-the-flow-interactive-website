@@ -74,6 +74,38 @@ header{
 }
 
 /*************-main-***************/
+@keyframes --open-chat {
+  0% {
+    width: 2.5em;
+  }
+
+  50% {
+    width: 90%;
+    height: 5em;
+  }
+
+  100% {
+    width: 90%;
+    height: 23em;
+  }
+}
+
+@keyframes --open-chat-mobile {
+  0% {
+    width: 2.5em;
+  }
+
+  50% {
+    width: 18em;
+    height: 40em;
+  }
+
+  100% {
+    width: 90%;
+    height: 100%;
+  }
+}
+
 main{
     background-color: var(--secondary-background-color);
     position: relative;
@@ -123,7 +155,6 @@ main{
             }
 
             .heading-gone{
-                appearance: none;
                 display: none;
             }
 
@@ -134,25 +165,6 @@ main{
             .secondary-search-bg {
                 position: relative;
                 width: 90%;
-            }
-
-            .secondary-search-input{
-
-                border-image: 
-                    radial-gradient(
-                        closest-side circle,
-                        white calc(100% - .225em),
-                        transparent 0
-                    ),
-                    conic-gradient(
-                        red,
-                        orange,
-                        gold,
-                        yellowgreen,
-                        dodgerblue,
-                        purple,
-                        red
-                    );                
             }
 
             .ai-button-secondary{
@@ -210,9 +222,18 @@ main{
                 flex-direction: column;
                 background-color:var(--primary-background-color);
                 border-radius: 2rem;
-                height: fit-content;
-                width: 90%;
-                /* border: 2px solid black; */
+                position: relative;
+                overflow: hidden;
+                width: 2.5em;
+                height: 2.5em;
+                animation-name: --open-chat-mobile;
+                animation-duration: 1s;
+                animation-timing-function: ease-in-out;
+                animation-fill-mode: forwards;
+
+                @media (min-width:1024px) {
+                    animation-name: --open-chat;
+                }
 
                 #chat-handle{
                     border: none;
@@ -246,9 +267,9 @@ main{
 
             .article-visible {
                 display: flex;
+
             }
 
-            
         }
     }
 
