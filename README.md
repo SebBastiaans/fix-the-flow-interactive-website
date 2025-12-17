@@ -4,17 +4,27 @@ Ontwerp en maak een interactieve website voor een opdrachtgever.
 De instructie vind je in: [INSTRUCTIONS.md](https://github.com/fdnd-task/fix-the-flow-interactive-website/blob/main/docs/INSTRUCTIONS.md)
 
 # Titel
-<!-- Geef je project een titel en schrijf in één zin wat het is -->
+Deze 'fix-the-flow-interactive-website' sprint, hebben wij interacties gemaakt. Ik heb ervoor gezorgd dat de AI chat opent, sluit en een beetje werkt. 
 
 ## Beschrijving
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
+
+https://github.com/user-attachments/assets/f83d4228-e7bc-4b2e-aa84-05d45bb90cfe
+
+In dit filmpje zie je dat wanneer je klaar bent met typen in de bar en op 'enter' klikt, er een chat opent met een kleine animatie. Dan kun je aan de bovenkant bij het pijltje de chat weer dichtklappen. Een andere manier om de chat te openen is om op de 'search' knop te klikken. In de chat is het mogelijk om dan een filter te selecteren, waarna er één product over blijft (dit is een dummy voorbeeld, dus werkt niet als een echt filter op databases).
 
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? -->
+Door CSS komt de chat omhoog als een animatie.
+Door keyframes en verschillende animatie types, heb ik ervoor gezorgd dat de chat eerst een klein beetje omhoog komt en wel de volle breedte pakt, en daarna de volledige hoogte en breedte pakt.
+
+Door middel van JavaScript opent de chat wanneer je op 'enter' klikt of als je op de search knop klikt. 
+Het moment dat je op de 'enter' toets klikt wanneer je typt in de input of wanneer je klikt op de 'search' button, dan wordt er een classlist toegevoegd die zegt dat er een article moet zijn (deze staat normaal op niet laten zien). Ook wordt er een classlist toegevoegd aan de 'I'm looking for a gift for... my uncle' titel, die zegt dat deze titel niet meer moet worden laten zien.
 
 ## Bronnen
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/animation
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@keyframes
+
+https://github.com/fdnd-task/ui-events/blob/main/docs/INSTRUCTIONS.md
 
 ## Licentie
 
