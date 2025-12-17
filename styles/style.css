@@ -176,46 +176,9 @@ main{
                 height: 50px;
             }
 
-
-            /* .ai-button{
-                position:fixed;
-                right: 10px;
-                bottom: 10px;
-                z-index:10;
-                width:8em;
-                aspect-ratio:1;
-                border-radius:50%;
-
-                appearance: none;
-                border:none;
-
-                background-image: 
-                    radial-gradient(
-                        closest-side circle,
-                        white calc(100% - .225em),
-                        transparent 0
-                    ),
-                    conic-gradient(
-                        red,
-                        orange,
-                        gold,
-                        yellowgreen,
-                        dodgerblue,
-                        purple,
-                        red
-                    );
-
-                font-size:1em;
-                color: var(--primary-color);
-                box-shadow: 0 0 20px var(--secondary-color);
-                cursor:pointer;
-                font-weight: bold;
-
-                @media(min-width: 1024px){
-                    display: none;
-                }
-
-            } */
+            .secondary-search-input{
+                width: 20.6rem;
+            }
 
             article{           
                 display: none;
