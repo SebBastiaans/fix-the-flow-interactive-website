@@ -8,9 +8,9 @@ Deze 'fix-the-flow-interactive-website' sprint, hebben wij interacties gemaakt. 
 
 ## Beschrijving
 
-https://github.com/user-attachments/assets/f83d4228-e7bc-4b2e-aa84-05d45bb90cfe
+https://github.com/user-attachments/assets/e735cebc-f754-430c-8d9e-10635276d859
 
-In dit filmpje zie je dat wanneer je klaar bent met typen in de bar en op 'enter' klikt, er een chat opent met een kleine animatie. Dan kun je aan de bovenkant bij het pijltje de chat weer dichtklappen. Een andere manier om de chat te openen is om op de 'search' knop te klikken. In de chat is het mogelijk om dan een filter te selecteren, waarna er één product over blijft (dit is een dummy voorbeeld, dus werkt niet als een echt filter op databases).
+In dit filmpje zie je dat wanneer ik begin met typen of op 'enter' knop klik in de bar er een chat opent met een kleine animatie. Dan kun je aan de bovenkant bij het pijltje de chat weer dichtklappen. Een andere manier om de chat te openen is om op de 'search' knop te klikken. In de chat is het mogelijk om dan een filter te selecteren, waarna er één product over blijft (dit is een dummy voorbeeld, dus werkt niet als een echt filter op databases).
 
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? -->
